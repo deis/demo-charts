@@ -1,18 +1,19 @@
-apiVersion: v1
-kind: ReplicationController
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
   name: guestbook-app
   labels:
-    name: frontend
+    app: guestbook-app
+    provider: guestbook
     heritage: helm
 spec:
   replicas: 2
-  selector:
-    name: frontend
   template:
     metadata:
       labels:
-        name: frontend
+        app: guestbook-app
+        provider: guestbook
+        heritage: helm
     spec:
       containers:
       - name: php-redis

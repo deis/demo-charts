@@ -3,11 +3,12 @@ kind: Service
 metadata:
   name: guestbook-app
   labels:
-    name: frontend
+    app: guestbook-app
+    provider: guestbook
     heritage: helm
 spec:
   type: LoadBalancer
   ports:
     - port: 80
   selector:
-    name: frontend
+    app: guestbook-app
