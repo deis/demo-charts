@@ -3,11 +3,12 @@ kind: Service
 metadata:
   name: redis-master
   labels:
-    name: redis-master
+    app: redis-master
+    provider: redis
     heritage: helm
 spec:
   ports:
   - port: 6379
     targetPort: 6379
   selector:
-    name: redis-master
+    app: redis-master
