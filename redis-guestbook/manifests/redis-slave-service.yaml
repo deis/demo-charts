@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: redis-slave
   labels:
-    name: redis-slave
+    app: redis-slave
+    provider: redis
     heritage: helm
 spec:
   ports:
   - port: 6379
   selector:
-    name: redis-slave
+    app: redis-slave
