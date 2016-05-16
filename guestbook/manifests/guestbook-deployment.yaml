@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: guestbook-app
+  name: guestbook
   labels:
-    app: guestbook-app
+    app: guestbook
     provider: guestbook
     heritage: helm
 spec:
@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        app: guestbook-app
+        app: guestbook
         provider: guestbook
         heritage: helm
     spec:

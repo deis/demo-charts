@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: guestbook-app
+  name: guestbook
   labels:
-    app: guestbook-app
+    app: guestbook
     provider: guestbook
     heritage: helm
 spec:
@@ -11,4 +11,4 @@ spec:
   ports:
     - port: 80
   selector:
-    app: guestbook-app
+    app: guestbook
