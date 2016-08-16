@@ -51,6 +51,5 @@ spec:
           mountPath: /bitnami/jenkins
       volumes:
       - name: jenkins-data
-        gcePersistentDisk:
-          pdName: jenkins-data
-          fsType: ext4
+        persistentVolumeClaim:
+          claimName: jenkins-data
