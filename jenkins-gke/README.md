@@ -35,10 +35,9 @@ The values of `jenkinsUser` and `jenkinsPassword` are the login credentials when
 
 ### Persistence
 
-For persistence of the Jenkins data and configuration, GCP Persistent Disk is used.
+For persistence of the Jenkins data and configuration, GCP Persistent Disk created via PersistentVolumeClaim.
 
-You can update the GCP Persistent Disk values in `tpl/values.toml`. When not specified, the default values `zone = "europe-west1-c"` and `disk size = "100GB"` are used.
-The disk `zone` must be in the same zone as your GKE cluster.
+You can update the PVC size value in `tpl/values.toml`. When not specified, the default value `jenkinsDataClaimSize = "100Gi"` is used.
 
 ### Generate chart
 
@@ -47,8 +46,6 @@ Generate the chart to apply your changes to the configuration:
 ```bash
 $ helmc generate jenkins-gke
 ```
-
-It also will create GCP Persistent Disk.
 
 ### Install chart
 

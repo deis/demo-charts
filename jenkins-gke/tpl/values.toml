@@ -1,9 +1,4 @@
-#helm:generate $HELM_GENERATE_DIR/tpl/storage.sh
+jenkinsUser = "user"
+jenkinsPassword = "bitnami"
 
-# set GCP Persistent Disk zone and size
-pdZone="europe-west1-c"
-pdSize="100GB"
-
-# set jenkins user
-jenkinsUser="user"
-jenkinsPassword="bitnami"
+jenkinsDataClaimSize = "100Gi"
