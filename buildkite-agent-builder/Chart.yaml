@@ -1,0 +1,8 @@
+name: buildkite-agent-builder
+home: https://github.com/buildkite/agent
+version: 1.0.0
+description: Buildkite Agent Builder
+maintainers:
+  - Rimas Mocevicius <rimas@deis.com>
+details:
+  This Chart provides a buildkite-agent Docker Builder (DIND) for running build automation tasks as building Docker images and pushing them to Docker Registry.
