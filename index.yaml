@@ -1,0 +1,21 @@
+redis-0.3.2:
+  name: redis
+  url: redis-0.3.2.tgz
+  created: 2016-09-26 21:48:35.643675265 +0000 UTC
+  checksum: 3b31e4329a20a95eb7c8ce14f4de1017ccc991a5
+  chartfile:
+    name: redis
+    home: http://redis.io/
+    sources:
+    - https://github.com/bitnami/bitnami-docker-redis
+    version: 0.3.2
+    description: Chart for Redis
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: Bitnami
+      email: containers@bitnami.com
+    engine: gotpl
+    icon: ""
