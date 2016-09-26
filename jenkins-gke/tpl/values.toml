@@ -1,4 +1,0 @@
-jenkinsUser = "user"
-jenkinsPassword = "bitnami"
-
-jenkinsDataClaimSize = "100Gi"
